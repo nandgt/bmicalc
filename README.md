@@ -1,4 +1,4 @@
-# BmiCALC
+# bmiCALC
 Web app that calculates your BMI value
 
 ## What is BMI?
