@@ -1,5 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  padding: 20px 200px;
+}
+
+header h1 {
+  color: hsl(0, 0%, 30%);
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  margin: 0 auto;
+  padding: 20px;
+  max-width: fit-content;
+
+  box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.5);
+  border: none;
+  border-radius: 15px;
+}
+
+.calculator > h2 {
+  color: hsl(0, 0%, 30%);
+}
+
+.calculator__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.calculator__form > hr {
+  border: 1px dashed hsl(0, 0%, 80%);
+  border-radius: 100px;
+}
+
+.calculator__form > button {
+  padding: 20px 40px;
+
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: hsl(135, 80%, 15%);
+
+  background-color: hsl(150, 100%, 45%);
+  border: none;
+  border-radius: 15px;
+}
+
+.calculator-form__input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calculator-form__input input {
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 40%);
+}
+
+.calculator-input__fields {
+  display: flex;
+  gap: .1px;
+}
+
+.calculator-input__fields button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 5px;
+
+  background-color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 40%);
+}
+
+.calculator-input__fields button img {
+  width: 32px;
+  height: 24px;
+}
+
+.calculator__results {
+  padding: 20px;
+
+  color: hsl(135, 80%, 15%);
+  background: linear-gradient(15deg, hsl(150, 100%, 45%) 35%, hsl(150, 100%, 73%) 100%);
+  border-radius: 15px 50px 50px 15px;
+}
+
+button {
+  cursor: pointer;
 }

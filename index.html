@@ -8,6 +8,55 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    Hello World
+    <header>
+      <h1>Body Mass Index (BMI) Calculator</h1>
+      <p>Check your body fat with precision!</p>
+    </header>
+
+    <main>
+      <div class="calculator">
+        <h2>Enter your details bellow -&gt;</h2>
+
+        <form class="calculator__form">
+          <section class="calculator-form__input">
+            <p>Age</p>
+            <input type="number" placeholder="18" min="1" required />
+          </section>
+
+          <hr />
+
+          <section class="calculator-form__input">
+            <p>Height</p>
+            <section class="calculator-input__fields">
+              <input type="number" placeholder="0" min="0" required />
+              <button>
+                <p>cm</p>
+                <img src="switch.png" />
+              </button>
+            </section>
+          </section>
+
+          <hr />
+          
+          <section class="calculator-form__input">
+            <p>Weight</p>
+            <section class="calculator-input__fields">
+              <input type="number" placeholder="0" min="0" required />
+              <button>
+                <p>kg</p>
+                <img src="switch.png" />
+              </button>
+            </section>
+          </section>
+
+          <button>Submit</button>
+        </form>
+
+        <section class="calculator__results">
+          <h2>Results:</h2>
+          <p>Fill in these fields and you will see your BMI result here!</p>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
