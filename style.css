@@ -7,8 +7,20 @@
 }
 
 body {
-  padding: 20px 200px;
+  padding: 20px;
   font-family: 'Inter', sans-serif;
+}
+
+header {
+  padding: 0 200px;
+}
+
+@media screen and (max-width: 1018px) {
+  header {
+    max-width: fit-content;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
 button {
@@ -64,11 +76,17 @@ h1 {
 
 .calculator-form__input {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between;  
+}
+
+.calculator-form__input > p {
+  flex-basis: 100px;
 }
 
 .calculator-form__input input {
+  width: 100px;
   padding: 10px;
   border: 1px solid hsl(0, 0%, 40%);
 }
@@ -82,22 +100,24 @@ h1 {
   display: flex;
   align-items: center;
   gap: 5px;
+  
   padding: 0 5px;
+  width: 60px;
 
   background-color: hsl(0, 0%, 95%);
   border: 1px solid hsl(0, 0%, 40%);
 }
 
 .calculator-input__fields button img {
-  width: 32px;
-  height: 24px;
+  width: 24px;
+  height: 12px;
 }
 
 .calculator__results {
   padding: 20px;
 
   color: hsl(135, 80%, 15%);
-  background: linear-gradient(15deg, hsl(150, 100%, 45%) 35%, hsl(150, 100%, 73%) 100%);
+  background-color: hsl(150, 100%, 45%);
   border-radius: 15px 50px 50px 15px;
 }
 
@@ -106,8 +126,25 @@ h1 {
   align-items: center;
   gap: 40px;
 
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.info img {
+  width: 30vw;
 }
 
 .info h1 {
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 825px) {
+  .info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info img {
+    width: 60vw;
+  }
 }
